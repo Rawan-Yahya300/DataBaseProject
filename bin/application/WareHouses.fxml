@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WareHousesController">
+   <children>
+      <Label layoutX="62.0" layoutY="139.0" prefHeight="31.0" prefWidth="136.0" text="Product Name" textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="wareHouse1Table" layoutX="62.0" layoutY="204.0" prefHeight="315.0" prefWidth="380.0" stylesheets="@test.css" />
+      <TextField fx:id="tfWareHouseSearch1" layoutX="198.0" layoutY="142.0" onKeyTyped="#updateWareHouse1TableAfterSearch" prefHeight="25.0" prefWidth="197.0" />
+      <TableView fx:id="wareHouse2Table" layoutX="472.0" layoutY="203.0" prefHeight="315.0" prefWidth="402.0" stylesheets="@test.css" />
+      <TextField fx:id="tfWareHouseSearch2" layoutX="615.0" layoutY="142.0" onKeyTyped="#updateWareHouse2TableAfterSearch" prefHeight="25.0" prefWidth="197.0" />
+      <Label layoutX="472.0" layoutY="139.0" prefHeight="31.0" prefWidth="136.0" text="Product Name" textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="516.0" prefHeight="31.0" prefWidth="414.0" text="(1) The main merchandise prepared for sale" textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="466.0" layoutY="516.0" prefHeight="31.0" prefWidth="414.0" text="(2) Reserved goods" textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,52 @@
+/* Apply transparent background to the BorderPane */
+.border-pane {
+    -fx-background-color: transparent;
+    -fx-border-radius: 7.0px;
+    -fx-border-width: 1.5px;
+    -fx-border-color: #55ac88;
+    -fx-background-radius: 10.0px;
+    
+}
+
+/* Apply transparent background to the top area */
+.border-pane .top {
+	-fx-border-width: 1.5px;
+    -fx-border-color: #55ac88;
+    -fx-background-radius: 7.0px 7.0px 0.0px 0.0px;
+    -fx-background-insets: 0.0 0.0 0.0 0.0; 
+    -fx-padding: 5.0px;
+}
+
+/* Apply transparent background to the bottom area */
+.border-pane .bottom {
+    -fx-border-width: 1.5px;
+    -fx-border-color: #55ac88;
+    -fx-background-radius: 7.0px 7.0px 7.0px 7.0px;
+    -fx-background-insets: 0.0 0.0 0.0 0.0; 
+    -fx-padding: 5.0px;
+}
+
+/* Apply transparent background to the left area */
+.border-pane .left {
+   -fx-border-width: 1.5px;
+    -fx-border-color: #55ac88;
+    -fx-background-radius: 7.0px 0.0px 0.0px 7.0px;
+    -fx-background-insets: 0.0 0.0 0.0 0.0; 
+    -fx-padding: 5.0px;
+}
+
+/* Apply transparent background to the right area */
+.border-pane .right {
+  	 -fx-border-width: 1.5px;
+    -fx-border-color: #55ac88;
+    -fx-background-radius: 0.0px 7.0px 7.0px 0.0px;
+    -fx-background-insets: 0.0 0.0 0.0 0.0; 
+    -fx-padding: 5.0px;
+}
+
+/* Apply transparent background to the center area */
+.border-pane .center {
+    -fx-background-color: transparent;
+    -fx-background-radius: 7.0px 7.0px 7.0px 7.0px;
+    -fx-background-insets: 0.0 0.0 0.0 0.0; 
+}

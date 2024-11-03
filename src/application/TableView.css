@@ -1,0 +1,97 @@
+
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #77a8b7, #f1f6f7);
+    -fx-background-radius: 7.0px 7.0px 0.0px 0.0px;
+    -fx-background-insets: 0.0 0.0 0.0 0.0; 
+    -fx-padding: 0.0 0.0 5.0px 0.0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2.0 0.0 2.0 10.0px;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color:  #1D6F84;
+}
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-padding: 0.0em;
+}
+
+
+.table-row-cell:selected {
+   -fx-background-color: #BBDFE8; 
+}
+.table-row-cell:hover {
+    -fx-background-color: #B2D4DD;
+    -fx-text-background-color:  #1D6F84;
+}
+
+ 
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0.0px;
+}
+
+
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+
+.table-view .virtual-flow .scroll-bar .increment-button .increment-arrow,
+.table-view .virtual-flow .scroll-bar .decrement-button .decrement-arrow {
+    -fx-background-color: #1D6F84;
+}
+
+/*scrollbar color*/
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  #77a8b7;
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  #77a8b7;
+}
+
+.BorderPane {
+	
+	-fx-background-color: transparent;
+    -fx-border-radius: 7.0px 7.0px 7.0px 7.0px;
+     -fx-background-radius: 10.0px 10.0px 10.0px 10.0px;
+   
+    
+    /* Make border color transparent to effectively remove it */
+    -fx-border-color: #1D6F84;
+
+}

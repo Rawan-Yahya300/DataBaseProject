@@ -1,0 +1,16 @@
+.circular-button {
+    -fx-background-radius: 50%; 
+    -fx-min-width: 35px; 
+    -fx-min-height: 35px; 
+    -fx-max-width: 35px; 
+    -fx-max-height: 35px; 
+    -fx-text-fill: black;
+    
+}
+
+.rounded-button {
+    -fx-background-radius: 10px; 
+     
+    -fx-text-fill: black;
+	 -fx-background-color: linear-gradient(to bottom, #93C8B3, #E6F5EF);
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CompanyOrdersController">
+   <children>
+      <TableView fx:id="companyOrderTable" layoutY="93.0" prefHeight="472.0" prefWidth="868.0" stylesheets="@test.css" />
+      <Label layoutX="23.0" layoutY="576.0" prefHeight="51.0" prefWidth="131.0" text="Total Price:" textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalPrice" layoutX="161.0" layoutY="576.0" prefHeight="51.0" prefWidth="246.0" text="#####" textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

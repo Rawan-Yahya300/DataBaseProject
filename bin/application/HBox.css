@@ -1,0 +1,23 @@
+/* Apply transparent background to the HBox */
+.hbox {
+    -fx-background-color: transparent;
+    -fx-border-radius: 10.0px;
+    -fx-background-radius: 10.0px;
+}
+
+/* Apply gradient background and rounded corners to the HBox */
+.hbox {
+    -fx-background-color: linear-gradient(to bottom, #93C8B3, #E6F5EF);
+    -fx-background-radius: 10.0px;
+    -fx-background-insets: 0.0;
+    -fx-padding: 5.0px;
+}
+
+/* Style for each child node within the HBox */
+.hbox .child {
+    -fx-background-color: linear-gradient(to bottom, #93C8B3, #93C8B3);
+    -fx-background-radius: 7.0px;
+    -fx-background-insets: 0.0;
+    -fx-padding: 5.0px;
+    -fx-border-radius: 7.0px;
+}

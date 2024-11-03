@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeController">
+   <children>
+      <TableView fx:id="employeeTable" layoutX="33.0" layoutY="211.0" prefHeight="410.0" prefWidth="534.0" stylesheets="@test.css" />
+      <TableView fx:id="CotactPersonTable" layoutX="591.0" layoutY="211.0" prefHeight="410.0" prefWidth="247.0" stylesheets="@test.css" />
+      <TextField fx:id="txtSearchName" layoutX="151.0" layoutY="177.0" onKeyTyped="#updatTableAfterSearch" />
+      <Label layoutX="33.0" layoutY="179.0" text="Employee name" textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientController">
+   <children>
+      <Label layoutX="62.0" layoutY="139.0" prefHeight="31.0" prefWidth="74.0" text="Client " textFill="#55ac88">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Pane layoutX="476.0" layoutY="210.0" prefHeight="310.0" prefWidth="380.0" style="-fx-border-color: #93C8B3; -fx-border-width: 2;" styleClass="BorderPane" stylesheets="@test.css">
+         <children>
+            <Label alignment="CENTER" layoutX="128.0" layoutY="14.0" prefHeight="45.0" prefWidth="124.0" text="Add Client" textFill="#55ac88">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <VBox layoutX="14.0" layoutY="83.0" prefHeight="178.0" prefWidth="124.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="94.0" text="Client Name" textFill="#55ac88">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="82.0" text="Client ID" textFill="#55ac88">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="116.0" text="Contact Address" textFill="#55ac88">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="116.0" text="Contact Person" textFill="#55ac88">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="138.0" layoutY="83.0" prefHeight="178.0" prefWidth="170.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtClientName" />
+                  <TextField fx:id="txtClienID" />
+                  <TextField fx:id="txtClienCntactAddress" />
+                  <TextField fx:id="txtClienAContactPerson" />
+               </children>
+            </VBox>
+            <Button fx:id="btAdditionalContactPerson" layoutX="247.0" layoutY="249.0" mnemonicParsing="false" onAction="#btAddAction" prefHeight="25.0" prefWidth="91.0" styleClass="rounded-button" stylesheets="@Button.css" text="Add " />
+            <Button fx:id="btAdd" layoutX="320.0" layoutY="202.0" minHeight="25.0" minWidth="24.0" mnemonicParsing="false" onAction="#btAddPhoneAction" prefHeight="25.0" prefWidth="26.0" styleClass="rounded-button" stylesheets="@Button.css" text="+" />
+            <Label fx:id="lblWarning" layoutX="14.0" layoutY="279.0" prefHeight="17.0" prefWidth="329.0" />
+         </children>
+      </Pane>
+      <TableView fx:id="clintTable" layoutX="62.0" layoutY="204.0" onMouseClicked="#chooseClient" prefHeight="161.0" prefWidth="380.0" style="-fx-border-width: 2;" stylesheets="@test.css" />
+      <Button fx:id="btChooseProduct" layoutX="753.0" layoutY="603.0" mnemonicParsing="false" onAction="#btChooseProductAction" prefHeight="25.0" prefWidth="124.0" styleClass="rounded-button" stylesheets="@Button.css" text="Choose Products" />
+      <ImageView fitHeight="167.0" fitWidth="242.0" layoutX="632.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/custe.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearchID" layoutX="126.0" layoutY="142.0" onKeyTyped="#updatTableAfterSearch" prefHeight="25.0" prefWidth="197.0" />
+      <TableView fx:id="CotactPersonTable" layoutX="62.0" layoutY="375.0" prefHeight="138.0" prefWidth="380.0" style="-fx-border-width: 2;" stylesheets="@test.css" />
+   </children>
+</Pane>

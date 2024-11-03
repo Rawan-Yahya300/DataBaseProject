@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashBorder1Controller">
+   <effect>
+      <Blend mode="SRC_ATOP" opacity="0.11" />
+   </effect>
+   <children>
+      <HBox layoutX="-1.0" prefHeight="182.0" prefWidth="950.0" spacing="5.0" style="-fx-alignment: Center;">
+         <children>
+            <StackPane prefHeight="171.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="62.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: lightBlue; -fx-translate-x: 0; -fx-translate-y: 0; -fx-translate-z: 0;" />
+                  <ImageView fitHeight="100.0" fitWidth="108.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/emp.png.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="52.0" prefWidth="123.0" style="-fx-alignment: center;">
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="108.0" style="-fx-translate-x: 0; -fx-translate-y: 0; -fx-translate-z: 0;" text="  Total Employees" textFill="#170108">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalEmp" alignment="CENTER" prefHeight="17.0" prefWidth="25.0" text="3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="173.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="62.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: pink;" />
+                  <ImageView fitHeight="111.0" fitWidth="124.0" opacity="0.13" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/client.png.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="74.0" prefWidth="99.0" style="-fx-alignment: center;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="108.0" style="-fx-translate-x: 0; -fx-translate-y: 0; -fx-translate-z: 0;" text="Total Cleints">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalClients" alignment="CENTER" prefHeight="17.0" prefWidth="18.0" text="3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="182.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="62.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #E6E6FA;" />
+                  <ImageView fitHeight="98.0" fitWidth="104.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/pro.png.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="58.0" prefWidth="108.0" style="-fx-alignment: center;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="108.0" style="-fx-translate-x: 0; -fx-translate-y: 0; -fx-translate-z: 0;" text="Total Products">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalProducts" alignment="CENTER" text="3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="207.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="62.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #90EE90;" />
+                  <ImageView fitHeight="101.0" fitWidth="106.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/sup.png.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="69.0" prefWidth="90.0" style="-fx-alignment: center;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="108.0" style="-fx-translate-x: 0; -fx-translate-y: 0; -fx-translate-z: 0;" text="Total Suppliers">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalSuppliers" alignment="CENTER" text="3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+      <Group layoutX="455.0" layoutY="292.0" />
+      <BorderPane layoutX="410.0" layoutY="184.0" prefHeight="217.0" prefWidth="260.0" stylesheets="@BorderPane.css">
+         <center>
+            <TableView fx:id="purchasisTable" prefHeight="209.0" prefWidth="249.0" styleClass="border-pane" stylesheets="@test.css" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="200.0" text="Purchases In The Last Month" BorderPane.alignment="CENTER" />
+         </top>
+         <styleClass>
+            <String fx:value="border-pane" />
+            <String fx:value="border-pane" />
+         </styleClass>
+         <bottom>
+            <Label fx:id="lblPricePurchases" alignment="CENTER" prefHeight="24.0" prefWidth="136.0" text="Total Price:" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <BorderPane layoutX="109.0" layoutY="184.0" prefHeight="217.0" prefWidth="246.0" styleClass="border-pane" stylesheets="@BorderPane.css">
+         <top>
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="200.0" text="Sales In The Last Month" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <TableView fx:id="salesTable" prefHeight="209.0" prefWidth="249.0" styleClass="border-pane" BorderPane.alignment="CENTER">
+               <stylesheets>
+                  <URL value="@BorderPane.css" />
+                  <URL value="@test.css" />
+               </stylesheets></TableView>
+         </center>
+         <bottom>
+            <Label fx:id="lblPriceSales" alignment="CENTER" prefHeight="22.0" prefWidth="152.0" text="Total Price:" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <HBox layoutX="696.0" layoutY="287.0" prefHeight="26.0" prefWidth="186.0" styleClass="hbox" stylesheets="@HBox.css">
+         <children>
+            <Label alignment="CENTER" stylesheets="@BorderPane.css" text="Gross profit:  " textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblGrossProfit" alignment="CENTER" prefHeight="18.0" prefWidth="88.0" text="###" />
+         </children>
+      </HBox>
+      <PieChart fx:id="pieChart" layoutX="186.0" layoutY="405.0" legendSide="LEFT" prefHeight="249.0" prefWidth="415.0" title="Sales of the last three months' sales" />
+   </children>
+</Pane>
